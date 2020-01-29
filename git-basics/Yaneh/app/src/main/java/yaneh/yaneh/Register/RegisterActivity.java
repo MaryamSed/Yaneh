@@ -11,8 +11,12 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 import yaneh.yaneh.R;
+import yaneh.yaneh.utils.BaseActivity;
+
 @EActivity(R.layout.activity_register)
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends BaseActivity {
+
+    Identity User = new Identity();
 
     @ViewById
     EditText name , family , mobile;
@@ -26,6 +30,15 @@ public class RegisterActivity extends AppCompatActivity {
 
     @Click
     void register(){
+        User.setName(name.getText().toString());
+        User.setFamily(family.getText().toString());
+        User.setMobile(mobile.getText().toString());
+
+        dialog.show();
+
+        User.setName("");
+        User.setFamily("");
+        User.setMobile("");
 
     }
 

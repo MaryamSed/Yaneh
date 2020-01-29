@@ -23,11 +23,3 @@ public class BaseApplication extends Application {
         super.onTerminate();
     }
 }
-
-
-//    @Override
-//    public void onCreate() {
-//        super.onCreate();
-//        Hawk.init(this).build();
-//
-//    }
