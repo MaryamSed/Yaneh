@@ -10,8 +10,11 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 import yaneh.yaneh.R;
+import yaneh.yaneh.utils.BaseActivity;
+
 @EActivity(R.layout.activity_login)
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseActivity {
+    contract.Presenter presenter = (contract.Presenter)new Presenter();
 
 @ViewById
     EditText name , family;
@@ -19,10 +22,10 @@ public class LoginActivity extends AppCompatActivity {
     Bundle login;
 @AfterViews
     void init(){
-
+    presenter.attachview((contract.View) this);
 }
 @Click
     void login(){
-    
+
 }
 }
