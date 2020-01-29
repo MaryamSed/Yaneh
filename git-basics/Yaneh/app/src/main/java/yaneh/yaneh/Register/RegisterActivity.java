@@ -14,9 +14,10 @@ import yaneh.yaneh.R;
 import yaneh.yaneh.utils.BaseActivity;
 
 @EActivity(R.layout.activity_register)
-public class RegisterActivity extends BaseActivity {
+public class RegisterActivity extends BaseActivity implements Contract.View {
 
     Identity User = new Identity();
+    Contract.Presenter presenter = (Contract.Presenter)new Presenter();
 
     @ViewById
     EditText name , family , mobile;
@@ -25,6 +26,8 @@ public class RegisterActivity extends BaseActivity {
 
     @AfterViews
     void init(){
+
+        presenter.attachview(this);
 
     }
 
