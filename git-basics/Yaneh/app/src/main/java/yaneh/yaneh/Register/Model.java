@@ -31,7 +31,7 @@ public class Model implements Contract.Model {
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                presenter.get_msg("لطفا مجدد تلاش کنید");
+                presenter.get_msg("لطفا مجدد تلاش کنید..");
             }
         });
 
