@@ -13,11 +13,11 @@ public class Presenter implements Contract.Presenter  {
 
     @Override
     public void registerUser(Identity User) {
-
+        model.registerUser(User);
     }
 
     @Override
     public void get_msg(String msg) {
-
+        view.get_msg(msg);
     }
 }
