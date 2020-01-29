@@ -20,7 +20,7 @@
         <activity android:name=".product.ProductActivity">
 
         </activity>
-        <activity android:name=".Register.RegisterActivity">
+        <activity android:name=".Register.RegisterActivity_">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
