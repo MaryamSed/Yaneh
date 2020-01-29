@@ -5,9 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-
         android:name=".utils.BaseApplication"
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,7 +16,7 @@
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".recycler.RecyclerActivity"></activity>
+        <activity android:name=".recycler.RecyclerActivity" />
         <activity android:name=".mytest.CityMainActivity" />
         <activity android:name=".product.ProductActivity">
             <intent-filter>
@@ -27,9 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mytest.TestActivityView">
-
-        </activity>
+        <activity android:name=".mytest.TestActivityView"></activity>
+        <activity android:name=".Register.RegisterActivity"></activity>
     </application>
 
 </manifest>
