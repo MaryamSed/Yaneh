@@ -17,16 +17,18 @@
             android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".recycler.RecyclerActivity" />
-        <activity android:name=".mytest.CityMainActivity" />
         <activity android:name=".product.ProductActivity">
+
+        </activity>
+        <activity android:name=".Register.RegisterActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".mytest.TestActivityView"></activity>
-        <activity android:name=".Register.RegisterActivity"></activity>
     </application>
 
 </manifest>
