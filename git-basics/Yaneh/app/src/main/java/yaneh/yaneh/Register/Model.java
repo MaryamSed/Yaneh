@@ -10,6 +10,11 @@ public class Model implements Contract.Model {
 
     @Override
     public void registerUser(Identity User) {
+        String name = User.getName().toString();
+        String family = User.getFamily().toString();
+        String mobile = User.getMobile().toString();
+
+
 
     }
 }

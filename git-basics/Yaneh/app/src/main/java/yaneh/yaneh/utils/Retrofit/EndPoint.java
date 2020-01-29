@@ -7,13 +7,13 @@ import retrofit2.http.POST;
 
 public interface EndPoint  {
 
-//    @FormUrlEncoded
-//    @POST("PhpProject1/index.php")
-//    Call<Void> register(
-//            @Field("name") String name,
-//            @Field("family") String family,
-//            @Field("mobile") String mobile
-//    );
+    @FormUrlEncoded
+    @POST("PhpProject1/index.php")
+    Call<Void> register(
+            @Field("name") String name,
+            @Field("family") String family,
+            @Field("mobile") String mobile
+    );
 //
 //    @FormUrlEncoded
 //    @POST("PhpProject1/login.php")

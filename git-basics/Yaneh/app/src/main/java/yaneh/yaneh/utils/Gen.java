@@ -5,8 +5,12 @@ import android.util.Log;
 import android.widget.Toast;
 
 import yaneh.yaneh.BuildConfig;
+import yaneh.yaneh.utils.Retrofit.EndPoint;
+import yaneh.yaneh.utils.Retrofit.Generator;
 
 public class Gen {
+
+    public static EndPoint endpoint = Generator.createService(EndPoint.class);
 
     public static void toast(String msg){
         Toast.makeText(BaseApplication.app, msg, Toast.LENGTH_SHORT).show();
