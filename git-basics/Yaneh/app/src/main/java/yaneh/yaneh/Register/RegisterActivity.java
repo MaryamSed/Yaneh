@@ -12,6 +12,7 @@ import org.androidannotations.annotations.ViewById;
 
 import yaneh.yaneh.R;
 import yaneh.yaneh.utils.BaseActivity;
+import yaneh.yaneh.utils.Gen;
 
 @EActivity(R.layout.activity_register)
 public class RegisterActivity extends BaseActivity implements Contract.View {
@@ -37,7 +38,7 @@ public class RegisterActivity extends BaseActivity implements Contract.View {
         User.setFamily(family.getText().toString());
         User.setMobile(mobile.getText().toString());
 
-
+        presenter.registerUser(User);
 
         dialog.show();
 
@@ -49,6 +50,8 @@ public class RegisterActivity extends BaseActivity implements Contract.View {
 
     @Override
     public void get_msg(String msg) {
+        Gen.toast(msg);
+        dialog.dismiss();
 
     }
 }

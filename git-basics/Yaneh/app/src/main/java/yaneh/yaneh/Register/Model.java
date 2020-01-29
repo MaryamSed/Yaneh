@@ -10,6 +10,6 @@ public class Model implements Contract.Model {
 
     @Override
     public void registerUser(Identity User) {
-        
+
     }
 }
