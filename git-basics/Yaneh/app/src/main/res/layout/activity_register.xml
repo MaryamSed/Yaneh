@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical"
+    tools:context=".Register.RegisterActivity">
+
+    <yaneh.yaneh.CustomView.MyEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:baselineAligned="false"
+        android:hint="نام" />
+
+    <yaneh.yaneh.CustomView.MyEditText
+        android:id="@+id/family"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="نام خوانوادگی" />
+
+    <yaneh.yaneh.CustomView.MyEditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="شماره تلفن همراه" />
+
+    <yaneh.yaneh.CustomView.MyButton
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="ثبت نام" />
+
+</LinearLayout>
