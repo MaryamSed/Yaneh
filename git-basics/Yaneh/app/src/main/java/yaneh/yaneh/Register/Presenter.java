@@ -10,4 +10,14 @@ public class Presenter implements Contract.Presenter  {
         model.attachpresenter(this);
 
     }
+
+    @Override
+    public void registerUser(Identity User) {
+
+    }
+
+    @Override
+    public void get_msg(String msg) {
+
+    }
 }

@@ -47,4 +47,8 @@ public class RegisterActivity extends BaseActivity implements Contract.View {
 
     }
 
+    @Override
+    public void get_msg(String msg) {
+
+    }
 }
