@@ -37,6 +37,8 @@ public class RegisterActivity extends BaseActivity implements Contract.View {
         User.setFamily(family.getText().toString());
         User.setMobile(mobile.getText().toString());
 
+
+
         dialog.show();
 
         User.setName("");
