@@ -2,6 +2,7 @@ package yaneh.yaneh.Login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 
 import org.androidannotations.annotations.AfterViews;
@@ -19,7 +20,7 @@ public class LoginActivity extends BaseActivity {
 @ViewById
     EditText name , family;
 @ViewById
-    Bundle login;
+    Button login;
 @AfterViews
     void init(){
     presenter.attachview((contract.View) this);
