@@ -13,7 +13,7 @@ public class Generator {
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.102/")
+                .baseUrl("http://192.168.1.100/")
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();

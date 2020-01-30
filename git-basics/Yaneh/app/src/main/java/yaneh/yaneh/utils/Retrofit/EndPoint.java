@@ -15,8 +15,6 @@ public interface EndPoint  {
             @Field("mobile") String mobile,
             @Field("address") String address,
             @Field("password") String password
-
-
     );
 //
 //    @FormUrlEncoded
