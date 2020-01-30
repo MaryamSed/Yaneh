@@ -7,52 +7,66 @@
     android:padding="12dp"
     android:orientation="vertical"
     tools:context=".Register.RegisterActivity">
-
-    <yaneh.yaneh.CustomView.MyEditText
-        android:id="@+id/name"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="100dp"
-        android:baselineAligned="false"
-        android:hint="نام" />
-
-    <yaneh.yaneh.CustomView.MyEditText
-        android:id="@+id/family"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:hint="نام خوانوادگی" />
-
-    <yaneh.yaneh.CustomView.MyEditText
-        android:id="@+id/mobile"
-        android:inputType="number"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:hint="شماره تلفن همراه" />
-
-    <yaneh.yaneh.CustomView.MyEditText
-        android:id="@+id/address"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:hint="آدرس" />
-
-    <yaneh.yaneh.CustomView.MyEditText
-        android:id="@+id/password"
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:hint="رمز عبور" />
-
-    <yaneh.yaneh.CustomView.MyEditText
-        android:id="@+id/passwordrepeat"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:hint="تکرار رمز عبور" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
-    <yaneh.yaneh.CustomView.MyButton
-        android:id="@+id/register"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="ثبت نام" />
+            <yaneh.yaneh.CustomView.MyEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="60dp"
+                android:baselineAligned="false"
+                android:hint="نام" />
+
+            <yaneh.yaneh.CustomView.MyEditText
+                android:id="@+id/family"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="نام خوانوادگی" />
+
+            <yaneh.yaneh.CustomView.MyEditText
+                android:id="@+id/mobile"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="شماره تلفن همراه" />
+
+            <yaneh.yaneh.CustomView.MyEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="آدرس" />
+
+            <yaneh.yaneh.CustomView.MyEditText
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="رمز عبور" />
+
+            <yaneh.yaneh.CustomView.MyEditText
+                android:id="@+id/passwordrepeat"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="تکرار رمز عبور" />
+
+
+            <yaneh.yaneh.CustomView.MyButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="ثبت نام" />
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>
