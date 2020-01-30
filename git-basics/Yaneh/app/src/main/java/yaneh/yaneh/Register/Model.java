@@ -18,8 +18,10 @@ public class Model implements Contract.Model {
         String name = User.getName().toString();
         String family = User.getFamily().toString();
         String mobile = User.getMobile().toString();
+        String address = User.getMobile().toString();
+        String password = User.getPassword().toString();
 
-        Gen.endpoint.register(name,family,mobile).enqueue(new Callback<Void>() {
+        Gen.endpoint.register(name,family,mobile,address,password).enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
                 if(response.code() == 200) {

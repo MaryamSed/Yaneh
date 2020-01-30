@@ -21,7 +21,7 @@ public class RegisterActivity extends BaseActivity implements Contract.View {
     Contract.Presenter presenter = (Contract.Presenter)new Presenter();
 
     @ViewById
-    EditText name , family , mobile;
+    EditText name , family , mobile , address , password , passwordrepeat;
     @ViewById
     Button register;
 
@@ -37,6 +37,8 @@ public class RegisterActivity extends BaseActivity implements Contract.View {
         User.setName(name.getText().toString());
         User.setFamily(family.getText().toString());
         User.setMobile(mobile.getText().toString());
+        User.setAddress(address.getText().toString());
+        User.setPassword(password.getText().toString());
 
         presenter.registerUser(User);
 

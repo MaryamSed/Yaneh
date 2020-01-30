@@ -12,7 +12,11 @@ public interface EndPoint  {
     Call<Void> register(
             @Field("name") String name,
             @Field("family") String family,
-            @Field("mobile") String mobile
+            @Field("mobile") String mobile,
+            @Field("address") String address,
+            @Field("password") String password
+
+
     );
 //
 //    @FormUrlEncoded
