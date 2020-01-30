@@ -28,6 +28,25 @@
         android:layout_height="70dp"
         android:hint="شماره تلفن همراه" />
 
+    <yaneh.yaneh.CustomView.MyEditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="آدرس" />
+
+    <yaneh.yaneh.CustomView.MyEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="رمز عبور" />
+
+    <yaneh.yaneh.CustomView.MyEditText
+        android:id="@+id/passwordrepeat"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="تکرار رمز عبور" />
+
+
     <yaneh.yaneh.CustomView.MyButton
         android:id="@+id/register"
         android:layout_width="match_parent"
