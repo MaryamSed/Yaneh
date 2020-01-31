@@ -19,13 +19,17 @@
         <activity android:name=".recycler.RecyclerActivity" />
         <activity android:name=".product.ProductActivity"></activity>
         <activity android:name=".Register.RegisterActivity_">
+
+        </activity>
+        <activity android:name=".Login.LoginActivity_">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".Login.LoginActivity_"></activity>
     </application>
 
 </manifest>

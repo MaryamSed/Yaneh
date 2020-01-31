@@ -9,4 +9,14 @@ public class Presenter implements contract.Presenter {
         model.attachpresenter(this);
 
     }
+
+    @Override
+    public void login(OrdersModel User) {
+        model.login(User);
+    }
+
+    @Override
+    public void gettoken(String token) {
+        view.gettoken(token);
+    }
 }

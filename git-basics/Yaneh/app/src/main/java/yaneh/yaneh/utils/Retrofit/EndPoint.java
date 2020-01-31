@@ -4,6 +4,7 @@ import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
+import yaneh.yaneh.Login.OrdersModel;
 
 public interface EndPoint  {
 
@@ -16,13 +17,13 @@ public interface EndPoint  {
             @Field("address") String address,
             @Field("password") String password
     );
-//
-//    @FormUrlEncoded
-//    @POST("PhpProject1/login.php")
-//    Call<LoginModel> login(
-//            @Field("name") String name,
-//            @Field("family") String family
-//    );
+
+    @FormUrlEncoded
+    @POST("PhpProject1/login.php")
+    Call<OrdersModel> login(
+            @Field("mobile") String mobile,
+            @Field("password") String password
+    );
 //
 //    @FormUrlEncoded
 //    @POST("PhpProject1/orders.php")

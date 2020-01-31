@@ -9,13 +9,13 @@
     tools:context=".Login.LoginActivity">
 
     <yaneh.yaneh.CustomView.MyEditText
-        android:id="@+id/name"
-        android:hint="نام"
+        android:id="@+id/mobile"
+        android:hint="شماره تلفن همراه"
         android:layout_width="match_parent"
         android:layout_height="70dp" />
     <yaneh.yaneh.CustomView.MyEditText
-        android:id="@+id/family"
-        android:hint="نام خانوادگی"
+        android:id="@+id/password"
+        android:hint="رمز عبور "
         android:layout_width="match_parent"
         android:layout_height="70dp" />
     <yaneh.yaneh.CustomView.MyButton

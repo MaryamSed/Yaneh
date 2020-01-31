@@ -12,13 +12,16 @@ import org.androidannotations.annotations.ViewById;
 
 import yaneh.yaneh.R;
 import yaneh.yaneh.utils.BaseActivity;
+import yaneh.yaneh.utils.Gen;
 
 @EActivity(R.layout.activity_login)
-public class LoginActivity extends BaseActivity {
+public class LoginActivity extends BaseActivity implements contract.View {
+
     contract.Presenter presenter = (contract.Presenter)new Presenter();
+    OrdersModel User = new OrdersModel();
 
 @ViewById
-    EditText name , family;
+    EditText mobile , password;
 @ViewById
     Button login;
 @AfterViews
@@ -27,6 +30,19 @@ public class LoginActivity extends BaseActivity {
 }
 @Click
     void login(){
+    User.setMobile(mobile.getText().toString());
+    User.setPassword(password.getText().toString());
 
+    presenter.login(User);
+
+    dialog.show();
+    mobile.setText("");
+    password.setText("");
 }
+
+    @Override
+    public void gettoken(String token) {
+        Gen.toast(token);
+
+    }
 }
