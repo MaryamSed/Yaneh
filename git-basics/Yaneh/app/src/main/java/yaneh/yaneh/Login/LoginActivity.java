@@ -43,6 +43,8 @@ public class LoginActivity extends BaseActivity implements contract.View {
     @Override
     public void gettoken(String token) {
         Gen.toast(token);
+        
+        dialog.dismiss();
 
     }
 }

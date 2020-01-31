@@ -28,7 +28,7 @@ public class Model implements contract.Model {
                 int statuscode = response.code();
                 if(statuscode==200){
                     msg = response.body().getToken();
-                    presenter.gettoken(msg);
+                    presenter.gettoken("خوش آمدید");
                     Hawk.put("token" , msg);
                 }else {
                     presenter.gettoken("رمز عبور شما معتبر نیست");
