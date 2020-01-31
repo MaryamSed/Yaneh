@@ -1,5 +1,6 @@
 package yaneh.yaneh.Login;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -10,6 +11,8 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
+import yaneh.yaneh.Orders.OrdersActivity;
+import yaneh.yaneh.Orders.OrdersActivity_;
 import yaneh.yaneh.R;
 import yaneh.yaneh.utils.BaseActivity;
 import yaneh.yaneh.utils.Gen;
@@ -43,7 +46,7 @@ public class LoginActivity extends BaseActivity implements contract.View {
     @Override
     public void gettoken(String token) {
         Gen.toast(token);
-        
+        startActivity(new Intent(mcontext, OrdersActivity_.class));
         dialog.dismiss();
 
     }

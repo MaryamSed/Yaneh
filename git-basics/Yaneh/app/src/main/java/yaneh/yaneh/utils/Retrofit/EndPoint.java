@@ -1,5 +1,7 @@
 package yaneh.yaneh.utils.Retrofit;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -24,10 +26,10 @@ public interface EndPoint  {
             @Field("mobile") String mobile,
             @Field("password") String password
     );
-//
-//    @FormUrlEncoded
-//    @POST("PhpProject1/orders.php")
-//    Call<List<OrdersModel>> orders(
-//            @Field("token") String token
-//    );
+
+    @FormUrlEncoded
+    @POST("PhpProject1/orders.php")
+    Call<List<yaneh.yaneh.Orders.OrdersModel>> orders(
+            @Field("token") String token
+    );
 }
