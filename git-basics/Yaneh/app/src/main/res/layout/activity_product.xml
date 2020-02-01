@@ -11,7 +11,34 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:background="@drawable/backoftoolbar"
-        android:elevation="5dp"/>
+        android:elevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Yaneh"
+                android:textColor="#fff"
+                android:textSize="22sp" />
+
+
+            <ImageButton
+                android:id="@+id/inDrawer"
+                android:background="#00000000"
+                android:layout_width="20dp"
+                android:padding="6dp"
+                android:scaleType="fitXY"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu_2" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
 
 
     <com.ogaclejapan.smarttablayout.SmartTabLayout
