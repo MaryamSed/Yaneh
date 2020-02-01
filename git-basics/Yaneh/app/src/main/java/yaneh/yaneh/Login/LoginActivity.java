@@ -25,15 +25,15 @@ public class LoginActivity extends BaseActivity implements contract.View {
     contract.Presenter presenter = (contract.Presenter)new Presenter();
     OrdersModel User = new OrdersModel();
 
-@ViewById
+    @ViewById
     EditText mobile , password;
-@ViewById
+    @ViewById
     Button login , register;
-@AfterViews
+    @AfterViews
     void init(){
     presenter.attachview((contract.View) this);
 }
-@Click
+    @Click
     void login(){
     User.setMobile(mobile.getText().toString());
     User.setPassword(password.getText().toString());

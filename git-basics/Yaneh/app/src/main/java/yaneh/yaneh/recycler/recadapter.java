@@ -53,7 +53,6 @@ public class recadapter extends RecyclerView.Adapter<recadapter.Holder> {
                 Intent intent = new Intent(mcontext , ProductActivity.class);
                 intent.putExtra("name" , name.getText().toString());
                 mcontext.startActivity(intent);
-                //Toast.makeText(mContext, cars.get(getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
             });
         }
     }

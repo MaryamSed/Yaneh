@@ -27,9 +27,6 @@ public class HomeActivity extends BaseActivity {
     RecyclerView recycler1 ,recycler2;
     TextView welcome,address;
 
-    List<citysModel> city;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,11 +40,6 @@ public class HomeActivity extends BaseActivity {
 
         welcome.setText("عزیز"+Id + "خوش آمدید");
         address.setText("آدرس شما:" + neighborhood);
-
-       // CityModel golpayegan = new CityModel();
-        //golpayegan.setCityname("گلپایگان");
-       // List<CityModel> city2 = new ArrayList<>();
-        //city2.add(golpayegan);
 
         citysModel golpa = new citysModel();
         golpa.setName("ggg");
@@ -63,36 +55,10 @@ public class HomeActivity extends BaseActivity {
         caar.add(golpa2);
         caar.add(golpa3);
 
-        //RecyclerCityAdapter adapter = new RecyclerCityAdapter(mcontext , city);
-        //recycler.setAdapter(adapter);
-
         recadapter adapter = new recadapter(mcontext,caar);
         recycler1.setAdapter(adapter);
         recycler2.setAdapter(adapter);
-
-        //recycler.setLayoutManager(new LinearLayoutManager(mcontext));
-
-
-        //showRecyclerView();
     }
-
-
-//
-//    recadapter adapter = new recadapter(mcontext , caar );
-//        rec.setAdapter(adapter);
-
-
-//    public void showRecyclerView() {
-//        CityModel golpayegan = new CityModel();
-//        golpayegan.setCityname("گلپایگان");
-//
-//        List<CityModel> citys = new ArrayList<>();
-//        citys.add(golpayegan);
-//
-//        RecyclerCityAdapter adapter = new RecyclerCityAdapter(mcontext , citys);
-//        recycler.setAdapter(adapter);
-//
-//    }
 
     public void bind() {
         drawer = findViewById(R.id.drawer);
@@ -114,10 +80,8 @@ public class HomeActivity extends BaseActivity {
     @Override
     public void onBackPressed() {
         if (backClicked) {
-            //second time
             finish();
         } else {
-            //first time
             backClicked = true;
            Toast.makeText(mcontext, "برای خروج دکمه بازگشت را دوباره بزنید", Toast.LENGTH_SHORT).show();
             new Handler().postDelayed(new Runnable() {
