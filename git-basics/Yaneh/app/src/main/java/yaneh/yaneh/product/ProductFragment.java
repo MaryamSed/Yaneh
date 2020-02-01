@@ -49,16 +49,16 @@ public class ProductFragment extends Fragment {
 
     public List pro(){
         ProductModel p1 = new ProductModel();
-        p1.setName("ggg1");
-        p1.setPrice(10);
+        p1.setName("محصول شماره 1");
+        p1.setPrice(140);
 
         ProductModel p2 = new ProductModel();
-        p2.setName("ggg2");
-        p2.setPrice(10);
+        p2.setName("محصول شماره 2");
+        p2.setPrice(510);
 
         ProductModel p3 = new ProductModel();
-        p3.setName("ggg3");
-        p3.setPrice(10);
+        p3.setName("محصول شماره 3");
+        p3.setPrice(110);
 
         prod.add(p1);
         prod.add(p2);

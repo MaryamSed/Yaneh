@@ -42,13 +42,13 @@ public class HomeActivity extends BaseActivity {
         address.setText("آدرس شما:" + neighborhood);
 
         citysModel golpa = new citysModel();
-        golpa.setName("ggg");
+        golpa.setName("محصول شماره 1");
 
         citysModel golpa2 = new citysModel();
-        golpa2.setName("ggghhkjb");
+        golpa2.setName("محصول شماره 2");
 
         citysModel golpa3 = new citysModel();
-        golpa3.setName("سلام");
+        golpa3.setName("محصول شماره 3");
 
         List<citysModel> caar = new ArrayList<>();
         caar.add(golpa);
