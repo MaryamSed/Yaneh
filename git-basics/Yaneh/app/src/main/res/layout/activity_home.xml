@@ -119,27 +119,50 @@
             android:layout_height="match_parent"
             android:layout_gravity="right"
             android:orientation="vertical"
-            android:background="#f4d9e2">
+            android:background="#f1eced">
             <View
                 android:background="#ec10a6"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"/>
 
             <TextView
+                android:layout_marginLeft="120dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="inside Drawer"
+                android:text="Yaneh"
                 android:textSize="30sp" />
             <Button
                 android:background="@drawable/colordrawerbutton"
                 android:id="@+id/user"
                 android:layout_marginTop="20dp"
-                android:text="user"
+                android:text="اطلاعات کاربری شما"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
             <Button
                 android:background="@drawable/colordrawerbutton"
-                android:text="about"
+                android:id="@+id/orders"
+                android:layout_marginTop="20dp"
+                android:text="سفارش های شما"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:background="@drawable/colordrawerbutton"
+                android:id="@+id/pro"
+                android:layout_marginTop="20dp"
+                android:text="پشتیبانی"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:background="@drawable/colordrawerbutton"
+                android:id="@+id/aboutus"
+                android:layout_marginTop="20dp"
+                android:text="درباره ما"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:layout_marginTop="20dp"
+                android:background="@drawable/colordrawerbutton"
+                android:text="خروج"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
