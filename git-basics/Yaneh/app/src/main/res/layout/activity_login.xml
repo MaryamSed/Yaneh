@@ -8,6 +8,12 @@
     android:padding="12dp"
     tools:context=".Login.LoginActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/backoftoolbar"
+        android:elevation="5dp"/>
+
     <yaneh.yaneh.CustomView.MyEditText
         android:id="@+id/mobile"
         android:hint="شماره تلفن همراه"
