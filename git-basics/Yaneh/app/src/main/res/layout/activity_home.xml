@@ -66,14 +66,21 @@
                 android:layout_height="wrap_content"
                 android:elevation="50dp"
                 android:textSize="15sp" />
-            <TextView
-                android:textSize="15sp"
+            <View
+                android:layout_marginTop="12dp"
                 android:paddingTop="12dp"
+                android:background="#ec1061"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_marginTop="12dp"
+                android:textSize="15sp"
                 android:text="خرید های قبلی شما"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
             <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="12dp"
                 android:layoutDirection="rtl"
                 android:id="@+id/recycler1"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
@@ -81,17 +88,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
             <View
+                android:layout_marginTop="12dp"
                 android:paddingTop="12dp"
                 android:background="#ec1061"
                 android:layout_width="match_parent"
                 android:layout_height="5dp"/>
             <TextView
+                android:layout_marginTop="12dp"
                 android:textSize="15sp"
                 android:text="محصولات داری تخفیف"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
             <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="12dp"
                 android:layoutDirection="rtl"
                 android:id="@+id/recycler2"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
