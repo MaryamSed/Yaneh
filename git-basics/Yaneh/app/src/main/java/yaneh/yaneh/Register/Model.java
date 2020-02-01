@@ -1,5 +1,7 @@
 package yaneh.yaneh.Register;
 
+import com.orhanobut.hawk.Hawk;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -26,6 +28,9 @@ public class Model implements Contract.Model {
             public void onResponse(Call<Void> call, Response<Void> response) {
                 if(response.code() == 200) {
                     presenter.get_msg("اطلاعات شما با موفقیت ثبت شد");
+                    Hawk.put("name" , name);
+                    Hawk.put("family" , family);
+                    Hawk.put("address" , address);
                 }else{
                     presenter.get_msg("لطفا مجدد تلاش کنید");
                 }

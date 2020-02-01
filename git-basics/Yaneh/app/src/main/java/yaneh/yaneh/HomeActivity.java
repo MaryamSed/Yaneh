@@ -9,17 +9,16 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
+import org.androidannotations.annotations.EActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import yaneh.yaneh.utils.BaseActivity;
-
 public class HomeActivity extends BaseActivity {
     DrawerLayout drawer;
     boolean backClicked = false;
     RecyclerView recycler;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +72,7 @@ public class HomeActivity extends BaseActivity {
         } else {
             //first time
             backClicked = true;
-           //Toast.makeText(mcontext, "برای خروج دکمه بازگشت را دوباره بزنید", Toast.LENGTH_SHORT).show();
+           Toast.makeText(mcontext, "برای خروج دکمه بازگشت را دوباره بزنید", Toast.LENGTH_SHORT).show();
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
