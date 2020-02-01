@@ -16,28 +16,18 @@
         <activity
             android:name=".HomeActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
     </activity>
-
-
-    <activity android:name=".recycler.RecyclerActivity" >
-
+    <activity android:name=".recycler.RecyclerActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
     </activity>
-
-
-
-    <activity android:name=".product.ProductActivity" >
+    <activity android:name=".product.ProductActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
     </activity>
-
-
-    <activity android:name=".Register.RegisterActivity_"></activity>
-        <activity android:name=".Login.LoginActivity_">
+    <activity android:name=".Register.RegisterActivity_" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".Login.LoginActivity_" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".Orders.OrdersActivity_"></activity>
+        <activity android:name=".Orders.OrdersActivity_" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
-
 </manifest>
