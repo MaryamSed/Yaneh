@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 import yaneh.yaneh.MainActivity;
@@ -49,6 +51,7 @@ public class recadapter extends RecyclerView.Adapter<recadapter.Holder> {
             name = itemView.findViewById(R.id.name);
             img = itemView.findViewById(R.id.img);
 
+            Glide.with(mcontext).load("https://img.phonandroid.com/2019/09/logo-android-10.jpg").into(img);
             img.setOnClickListener(V->{
                 Intent intent = new Intent(mcontext , ProductActivity.class);
                 intent.putExtra("name" , name.getText().toString());
