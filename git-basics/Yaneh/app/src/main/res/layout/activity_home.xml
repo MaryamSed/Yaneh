@@ -96,7 +96,7 @@
             <TextView
                 android:layout_marginTop="12dp"
                 android:textSize="15sp"
-                android:text="محصولات داری تخفیف"
+                android:text="محصولات دارای تخفیف"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
