@@ -70,6 +70,7 @@
                 android:layout_height="50dp" />
 
             <android.support.v7.widget.RecyclerView
+                android:layoutDirection="rtl"
                 android:paddingTop="25dp"
                 android:id="@+id/recycler1"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
@@ -86,6 +87,7 @@
                 android:layout_height="50dp" />
 
             <android.support.v7.widget.RecyclerView
+                android:layoutDirection="rtl"
                 android:paddingTop="25dp"
                 android:id="@+id/recycler2"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
