@@ -121,7 +121,7 @@
             android:orientation="vertical"
             android:background="#f1eced">
             <View
-                android:background="#ec10a6"
+                android:background="#f7e3f1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"/>
 
@@ -132,28 +132,28 @@
                 android:text="Yaneh"
                 android:textSize="30sp" />
             <Button
-                android:background="@drawable/colordrawerbutton"
+                android:background="@drawable/pink_button"
                 android:id="@+id/user"
                 android:layout_marginTop="20dp"
                 android:text="اطلاعات کاربری شما"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
             <Button
-                android:background="@drawable/colordrawerbutton"
+                android:background="@drawable/pink_button"
                 android:id="@+id/orders"
                 android:layout_marginTop="20dp"
                 android:text="سفارش های شما"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
             <Button
-                android:background="@drawable/colordrawerbutton"
+                android:background="@drawable/pink_button"
                 android:id="@+id/pro"
                 android:layout_marginTop="20dp"
                 android:text="پشتیبانی"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
             <Button
-                android:background="@drawable/colordrawerbutton"
+                android:background="@drawable/pink_button"
                 android:id="@+id/aboutus"
                 android:layout_marginTop="20dp"
                 android:text="درباره ما"
@@ -161,7 +161,7 @@
                 android:layout_height="50dp" />
             <Button
                 android:layout_marginTop="20dp"
-                android:background="@drawable/colordrawerbutton"
+                android:background="@drawable/pink_button"
                 android:text="خروج"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
