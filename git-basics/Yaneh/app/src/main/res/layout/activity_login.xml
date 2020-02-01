@@ -35,7 +35,6 @@
         android:layout_height="70dp" />
     <yaneh.yaneh.CustomView.MyEditText
         android:id="@+id/password"
-        android:inputType="textPassword"
         android:hint="رمز عبور "
         android:layout_width="match_parent"
         android:layout_height="70dp" />
