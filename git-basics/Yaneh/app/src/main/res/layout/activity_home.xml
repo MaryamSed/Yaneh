@@ -52,9 +52,16 @@
             </android.support.v7.widget.Toolbar>
 
             <TextView
+                android:id="@+id/welcome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hiiiiii, I am Yaneh"
+                android:elevation="50dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:elevation="50dp"
                 android:textSize="30sp" />
 

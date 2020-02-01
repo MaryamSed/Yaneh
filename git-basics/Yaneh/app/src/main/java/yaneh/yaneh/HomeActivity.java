@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.orhanobut.hawk.Hawk;
 
 import org.androidannotations.annotations.EActivity;
 
@@ -19,6 +22,7 @@ public class HomeActivity extends BaseActivity {
     DrawerLayout drawer;
     boolean backClicked = false;
     RecyclerView recycler;
+    TextView welcome,address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,13 @@ public class HomeActivity extends BaseActivity {
 
         bind();
         clickOnDrawer();
+
+        String Id = Hawk.get("name") + " " + Hawk.get("family");
+        String naibore = Hawk.get("address");
+
+        welcome.setText("خوش آمدید"+Id + "عزیز");
+        address.setText("آدرس شما:" + naibore);
+
         CityModel golpayegan = new CityModel();
         golpayegan.setCityname("گلپایگان");
 
@@ -53,6 +64,8 @@ public class HomeActivity extends BaseActivity {
     public void bind() {
         drawer = findViewById(R.id.drawer);
         recycler=findViewById(R.id.recycler);
+        welcome=findViewById(R.id.welcome);
+        address=findViewById(R.id.address);
     }
 
     public void clickOnDrawer() {
