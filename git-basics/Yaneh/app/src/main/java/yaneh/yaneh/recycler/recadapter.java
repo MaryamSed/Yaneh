@@ -14,6 +14,7 @@ import java.util.List;
 
 import yaneh.yaneh.MainActivity;
 import yaneh.yaneh.R;
+import yaneh.yaneh.product.ProductActivity;
 
 public class recadapter extends RecyclerView.Adapter<recadapter.Holder> {
     Context mcontext;
@@ -49,7 +50,7 @@ public class recadapter extends RecyclerView.Adapter<recadapter.Holder> {
             img = itemView.findViewById(R.id.img);
 
             img.setOnClickListener(V->{
-                Intent intent = new Intent(mcontext , MainActivity.class);
+                Intent intent = new Intent(mcontext , ProductActivity.class);
                 intent.putExtra("name" , name.getText().toString());
                 mcontext.startActivity(intent);
                 //Toast.makeText(mContext, cars.get(getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
