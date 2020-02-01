@@ -14,6 +14,8 @@ import org.androidannotations.annotations.ViewById;
 import yaneh.yaneh.Orders.OrdersActivity;
 import yaneh.yaneh.Orders.OrdersActivity_;
 import yaneh.yaneh.R;
+import yaneh.yaneh.Register.RegisterActivity;
+import yaneh.yaneh.Register.RegisterActivity_;
 import yaneh.yaneh.utils.BaseActivity;
 import yaneh.yaneh.utils.Gen;
 
@@ -26,7 +28,7 @@ public class LoginActivity extends BaseActivity implements contract.View {
 @ViewById
     EditText mobile , password;
 @ViewById
-    Button login;
+    Button login , register;
 @AfterViews
     void init(){
     presenter.attachview((contract.View) this);
@@ -49,5 +51,9 @@ public class LoginActivity extends BaseActivity implements contract.View {
         startActivity(new Intent(mcontext, OrdersActivity_.class));
         dialog.dismiss();
 
+    }
+    @Click
+    void register(){
+        startActivity(new Intent(mcontext , RegisterActivity_.class));
     }
 }

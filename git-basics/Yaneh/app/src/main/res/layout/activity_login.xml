@@ -24,5 +24,10 @@
         android:text="ورود"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
+    <yaneh.yaneh.CustomView.MyButton
+        android:id="@+id/register"
+        android:text="ایحاد حساب کاربری"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 
 </LinearLayout>
