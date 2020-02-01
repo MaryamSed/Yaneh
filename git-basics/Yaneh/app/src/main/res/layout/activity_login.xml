@@ -20,11 +20,15 @@
         android:layout_width="match_parent"
         android:layout_height="70dp" />
     <yaneh.yaneh.CustomView.MyButton
+        android:background="@drawable/pink_button"
         android:id="@+id/login"
         android:text="ورود"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
     <yaneh.yaneh.CustomView.MyButton
+        android:layout_marginTop="12dp"
+        android:paddingTop="12dp"
+        android:background="@drawable/pink_button"
         android:id="@+id/register"
         android:text="ایحاد حساب کاربری"
         android:layout_width="match_parent"

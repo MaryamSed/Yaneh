@@ -9,6 +9,7 @@
     tools:context=".Orders.OrdersActivity">
 
     <yaneh.yaneh.CustomView.MyButton
+        android:background="@drawable/pink_button"
         android:id="@+id/home"
         android:text="صفحه اصلی"
         android:layout_width="match_parent"

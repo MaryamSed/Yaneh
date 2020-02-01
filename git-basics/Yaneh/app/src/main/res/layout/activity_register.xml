@@ -59,6 +59,7 @@
 
 
             <yaneh.yaneh.CustomView.MyButton
+                android:background="@drawable/pink_button"
                 android:layout_marginTop="20dp"
                 android:id="@+id/register"
                 android:layout_width="match_parent"
