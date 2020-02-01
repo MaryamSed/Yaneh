@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
@@ -17,12 +18,17 @@ import org.androidannotations.annotations.EActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+import yaneh.yaneh.recycler.citysModel;
+import yaneh.yaneh.recycler.recadapter;
 import yaneh.yaneh.utils.BaseActivity;
 public class HomeActivity extends BaseActivity {
     DrawerLayout drawer;
     boolean backClicked = false;
-    RecyclerView recycler;
+    RecyclerView recycler1 ,recycler2;
     TextView welcome,address;
+
+    List<citysModel> city;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,21 +39,48 @@ public class HomeActivity extends BaseActivity {
         clickOnDrawer();
 
         String Id = Hawk.get("name") + " " + Hawk.get("family");
-        String naibore = Hawk.get("address");
+        String neighborhood = Hawk.get("address");
 
         welcome.setText("خوش آمدید"+Id + "عزیز");
-        address.setText("آدرس شما:" + naibore);
+        address.setText("آدرس شما:" + neighborhood);
 
-        CityModel golpayegan = new CityModel();
-        golpayegan.setCityname("گلپایگان");
+       // CityModel golpayegan = new CityModel();
+        //golpayegan.setCityname("گلپایگان");
+       // List<CityModel> city2 = new ArrayList<>();
+        //city2.add(golpayegan);
 
-        List<CityModel> city = new ArrayList<>();
-        city.add(golpayegan);
+        citysModel golpa = new citysModel();
+        golpa.setName("ggg");
 
-        RecyclerCityAdapter adapter = new RecyclerCityAdapter(mcontext , city);
-        recycler.setAdapter(adapter);
+        citysModel golpa2 = new citysModel();
+        golpa2.setName("ggghhkjb");
+
+        citysModel golpa3 = new citysModel();
+        golpa3.setName("سلام");
+
+        List<citysModel> caar = new ArrayList<>();
+        caar.add(golpa);
+        caar.add(golpa2);
+        caar.add(golpa3);
+
+        //RecyclerCityAdapter adapter = new RecyclerCityAdapter(mcontext , city);
+        //recycler.setAdapter(adapter);
+
+        recadapter adapter = new recadapter(mcontext,caar);
+        recycler1.setAdapter(adapter);
+        recycler2.setAdapter(adapter);
+
+        //recycler.setLayoutManager(new LinearLayoutManager(mcontext));
+
+
         //showRecyclerView();
     }
+
+
+//
+//    recadapter adapter = new recadapter(mcontext , caar );
+//        rec.setAdapter(adapter);
+
 
 //    public void showRecyclerView() {
 //        CityModel golpayegan = new CityModel();
@@ -63,7 +96,8 @@ public class HomeActivity extends BaseActivity {
 
     public void bind() {
         drawer = findViewById(R.id.drawer);
-        recycler=findViewById(R.id.recycler);
+        recycler1=findViewById(R.id.recycler1);
+        recycler2=findViewById(R.id.recycler2);
         welcome=findViewById(R.id.welcome);
         address=findViewById(R.id.address);
     }

@@ -64,13 +64,35 @@
                 android:layout_height="wrap_content"
                 android:elevation="50dp"
                 android:textSize="30sp" />
+            <TextView
+                android:text="خرید های قبلی شما"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycler"
+                android:paddingTop="25dp"
+                android:id="@+id/recycler1"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+            <View
+                android:background="#ec1061"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:text="داری تخفیف"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:paddingTop="25dp"
+                android:id="@+id/recycler2"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
 
         </LinearLayout>
 
