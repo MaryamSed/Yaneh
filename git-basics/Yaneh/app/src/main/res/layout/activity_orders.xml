@@ -8,6 +8,12 @@
     android:padding="12dp"
     tools:context=".Orders.OrdersActivity">
 
+    <yaneh.yaneh.CustomView.MyButton
+        android:id="@+id/home"
+        android:text="صفحه اصلی"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
     <ListView
         android:id="@+id/orderslist"
         android:layout_width="match_parent"
