@@ -41,7 +41,7 @@ public class HomeActivity extends BaseActivity {
         String Id = Hawk.get("name") + " " + Hawk.get("family");
         String neighborhood = Hawk.get("address");
 
-        welcome.setText("خوش آمدید"+Id + "عزیز");
+        welcome.setText("عزیز"+Id + "خوش آمدید");
         address.setText("آدرس شما:" + neighborhood);
 
        // CityModel golpayegan = new CityModel();

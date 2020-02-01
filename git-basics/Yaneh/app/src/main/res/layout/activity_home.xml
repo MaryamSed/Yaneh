@@ -52,43 +52,47 @@
             </android.support.v7.widget.Toolbar>
 
             <TextView
+                android:layout_gravity="right"
                 android:id="@+id/welcome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:elevation="50dp"
-                android:textSize="30sp" />
+                android:textSize="15sp" />
 
             <TextView
+                android:layout_gravity="right"
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:elevation="50dp"
-                android:textSize="30sp" />
+                android:textSize="15sp" />
             <TextView
+                android:textSize="15sp"
+                android:paddingTop="12dp"
                 android:text="خرید های قبلی شما"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
             <android.support.v7.widget.RecyclerView
                 android:layoutDirection="rtl"
-                android:paddingTop="25dp"
                 android:id="@+id/recycler1"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
             <View
+                android:paddingTop="12dp"
                 android:background="#ec1061"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"/>
+                android:layout_height="5dp"/>
             <TextView
-                android:text="داری تخفیف"
+                android:textSize="15sp"
+                android:text="محصولات داری تخفیف"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
             <android.support.v7.widget.RecyclerView
                 android:layoutDirection="rtl"
-                android:paddingTop="25dp"
                 android:id="@+id/recycler2"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
                 android:orientation="horizontal"
