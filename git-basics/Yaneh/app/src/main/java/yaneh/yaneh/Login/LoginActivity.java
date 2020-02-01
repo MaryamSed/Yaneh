@@ -47,7 +47,7 @@ public class LoginActivity extends BaseActivity implements contract.View {
 
     @Override
     public void gettoken(String token) {
-        Gen.toast(token);
+        Gen.toast("خوش آمدید");
         startActivity(new Intent(mcontext, OrdersActivity_.class));
         dialog.dismiss();
 
